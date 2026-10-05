@@ -1,0 +1,48 @@
+# Optional workflow: copy to .github/workflows/deploy-pages.yml and
+# select GitHub Actions in Settings > Pages before using this route.
+name: Deploy academic website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare static website
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html styles.css app.js CNAME .nojekyll robots.txt sitemap.xml _site/
+          cp -R assets _site/assets
+          # Preserve existing URLs to legacy figures and documents, if present.
+          for directory in Figs Files; do
+            if [ -d "$directory" ]; then
+              cp -R "$directory" "_site/$directory"
+            fi
+          done
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
