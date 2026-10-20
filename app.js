@@ -50,4 +50,10 @@ document.querySelector('.copy-email').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText('Lei_Yongxiang@a-star.edu.sg'); status.textContent = 'Email address copied.'; }
   catch { status.textContent = 'Please select the email address above to copy it.'; }
 });
+// Keep demo playback focused when switching between recordings.
+const demoVideos = [...document.querySelectorAll('.demo-video')];
+demoVideos.forEach(video => video.addEventListener('play', () => {
+  demoVideos.forEach(other => { if (other !== video) other.pause(); });
+}));
 updatePublications();
+

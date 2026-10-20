@@ -23,8 +23,8 @@
   <meta name="twitter:image" content="https://www.yongxianglei.com/assets/yongxiang-lei.jpg?v=20261006">
   <meta name="twitter:image:alt" content="Portrait of Dr Yongxiang Lei in a dark suit beside a bookshelf">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=20261006-portrait">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261020-demos">
+  <script src="app.js?v=20261020-demos" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,7 +57,7 @@
       <a class="wordmark" href="#home" aria-label="Yongxiang Lei, home">Yongxiang Lei<span>雷勇祥</span></a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a href="#research">Research</a><a href="#demos">Demos</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#contact">Contact</a>
         <a class="nav-cv" href="assets/Yongxiang_Lei_CV_2026.pdf" download>Download CV</a>
       </nav>
     </div>
@@ -89,9 +89,40 @@
         <div class="detail-aside"><p class="small-label">Methods & interests</p><div class="tag-list" id="theme-methods"><span>Probabilistic diffusion models</span><span>Model predictive control</span><span>Reinforcement learning</span></div><button class="text-link related-papers" data-filter="energy">View related publications</button></div>
       </div>
     </section>
+    <section class="demos-section" id="demos" aria-labelledby="demos-title">
+      <div class="section-wrap section-space">
+        <div class="section-heading"><p class="eyebrow">02 / Research demos</p><div><h2 id="demos-title">Robotics in motion.</h2><p>Two simulation recordings of a wheeled robot in MuJoCo. Play either video to explore the robot's motion and joint controls.</p></div></div>
+        <div class="demo-grid">
+          <article class="demo-card" aria-labelledby="demo-01-title">
+            <video class="demo-video" controls playsinline preload="none" width="1280" height="720" poster="assets/demos/mujoco-robot-demo-01.jpg" aria-labelledby="demo-01-title" aria-describedby="demo-01-description">
+              <source src="assets/demos/mujoco-robot-demo-01.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="assets/demos/mujoco-robot-demo-01.mp4">Open demo 01 as an MP4 video</a>.
+            </video>
+            <div class="demo-copy">
+              <div class="demo-meta"><span>MuJoCo · Robotics</span><span>00:29</span></div>
+              <h3 id="demo-01-title">Wheeled robot simulation · Demo 01</h3>
+              <p id="demo-01-description">A simulation recording showing the robot's motion alongside its joint control panel.</p>
+              <a class="text-link" href="assets/demos/mujoco-robot-demo-01.mp4" target="_blank" rel="noopener noreferrer">Open demo 01 video <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="demo-card" aria-labelledby="demo-02-title">
+            <video class="demo-video" controls playsinline preload="none" width="1280" height="720" poster="assets/demos/mujoco-robot-demo-02.jpg" aria-labelledby="demo-02-title" aria-describedby="demo-02-description">
+              <source src="assets/demos/mujoco-robot-demo-02.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="assets/demos/mujoco-robot-demo-02.mp4">Open demo 02 as an MP4 video</a>.
+            </video>
+            <div class="demo-copy">
+              <div class="demo-meta"><span>MuJoCo · Robotics</span><span>00:15</span></div>
+              <h3 id="demo-02-title">Wheeled robot simulation · Demo 02</h3>
+              <p id="demo-02-description">A second simulation recording showing another sequence of wheeled robot motion.</p>
+              <a class="text-link" href="assets/demos/mujoco-robot-demo-02.mp4" target="_blank" rel="noopener noreferrer">Open demo 02 video <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="publications-section" id="publications" aria-labelledby="publications-title">
       <div class="section-wrap section-space">
-        <div class="section-heading"><p class="eyebrow">02 / Selected work</p><div><h2 id="publications-title">Research in print.</h2><p>A selection of published work across climate, renewable energy, industrial modelling, and control.</p></div></div>
+        <div class="section-heading"><p class="eyebrow">03 / Selected work</p><div><h2 id="publications-title">Research in print.</h2><p>A selection of published work across climate, renewable energy, industrial modelling, and control.</p></div></div>
         <div class="publication-tools">
           <div class="filter-list" role="group" aria-label="Filter publications by topic">
             <button data-filter="all" aria-pressed="true" class="filter active">All topics</button><button data-filter="climate" aria-pressed="false" class="filter">Climate</button><button data-filter="energy" aria-pressed="false" class="filter">Energy</button><button data-filter="industry" aria-pressed="false" class="filter">Industry</button><button data-filter="control" aria-pressed="false" class="filter">Control</button>
@@ -116,12 +147,13 @@
     </section>
     <section class="book-section" aria-labelledby="book-title"><div class="section-wrap book-layout"><div class="book-label"><p class="eyebrow">Research monograph</p><p>Academic Press / Elsevier</p><span>ISBN 9780443367595</span></div><div><h2 id="book-title">Learning-Based Soft Sensing and Predictions for Process Industries</h2><p class="book-subtitle">Theory, Methodology and Applications</p><p class="book-authors">Hamid Reza Karimi & Yongxiang Lei</p><p class="book-description">Learning-based modelling, prediction, and soft sensing for industrial processes.</p><a class="button button-light" href="https://books.google.com/books?vid=ISBN9780443367595" target="_blank" rel="noopener noreferrer">Explore the book</a></div></div></section>
     <section class="section-wrap section-space" id="about" aria-labelledby="about-title">
-      <div class="section-heading"><p class="eyebrow">03 / About</p><div><h2 id="about-title">Across disciplines.<br>Grounded in engineering.</h2></div></div>
+      <div class="section-heading"><p class="eyebrow">04 / About</p><div><h2 id="about-title">Across disciplines.<br>Grounded in engineering.</h2></div></div>
       <div class="about-layout"><div class="about-intro"><p class="lead">My work brings together machine learning, uncertainty quantification, and the dynamics of physical systems.</p><p>I am a Research Scientist at the Singapore Institute of Manufacturing Technology (SIMTech), A*STAR. My research spans interpretable neural networks, probabilistic forecasting, reinforcement learning, model predictive control, and digital twins.</p><p>I received my PhD in Mechanical Engineering (Control) from Politecnico di Milano in 2024. My research and teaching at the University of Warwick have focused on learning-based prediction and control for offshore renewable and sustainable energy.</p><a class="text-link" href="assets/Yongxiang_Lei_CV_2026.pdf" download>Download curriculum vitae</a></div><div class="education"><h3>Education & doctoral research</h3><ol class="timeline"><li><span class="timeline-year">Doctoral research</span><strong>University of Warwick</strong><p>Engineering · Prediction and control for offshore renewable energy</p></li><li><span class="timeline-year">2024</span><strong>Politecnico di Milano</strong><p>PhD · Mechanical Engineering (Control)</p></li><li><span class="timeline-year">2020</span><strong>Central South University</strong><p>MSc · Control Engineering</p></li><li><span class="timeline-year">2017</span><strong>University of South China</strong><p>BSc · Automation</p></li></ol></div></div>
       <div class="academic-grid"><div><p class="eyebrow">Teaching</p><h3>Sharing ideas through practice.</h3><p>Graduate teaching at the University of Warwick in nonlinear control, reinforcement learning, and systems modelling.</p><ul><li>ES4G4 · Nonlinear Control and Reinforcement Learning</li><li>ES197 · Systems Modelling, Simulation and Computation</li></ul></div><div><p class="eyebrow">Academic service</p><h3>Contributing to the research community.</h3><p>Guest editing on climate forecasting and soft sensing, and prediction and control for offshore energy.</p><ul><li>Applied Sciences · Climate modelling and applications</li><li>Energy Engineering · Offshore energy prediction and control</li></ul></div><div><p class="eyebrow">Recognition</p><h3>Selected awards.</h3><ul class="award-list"><li><strong>Best PhD Dissertation Award</strong><span>Politecnico di Milano · 2024</span></li><li><strong>Oral Presentation Winner</strong><span>Postgraduate Research Showcase, University of Warwick · 2025</span></li></ul></div></div>
     </section>
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="section-wrap contact-layout"><div><p class="eyebrow">04 / Connect</p><h2 id="contact-title">Better questions.<br>Better engineering decisions.</h2><p>For research collaborations in trustworthy AI, forecasting, predictive control, and digital twins.</p></div><div class="contact-links"><a class="email-link" href="mailto:Lei_Yongxiang@a-star.edu.sg">Lei_Yongxiang@a-star.edu.sg</a><div class="profile-links"><a href="https://scholar.google.com/citations?user=-yZ-BXMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0001-6375-8474" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://github.com/YongxiangLei" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/yongxiang-lei" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><button class="copy-email" type="button">Copy email address</button><p class="copy-status" role="status" aria-live="polite"></p></div></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="section-wrap contact-layout"><div><p class="eyebrow">05 / Connect</p><h2 id="contact-title">Better questions.<br>Better engineering decisions.</h2><p>For research collaborations in trustworthy AI, forecasting, predictive control, and digital twins.</p></div><div class="contact-links"><a class="email-link" href="mailto:Lei_Yongxiang@a-star.edu.sg">Lei_Yongxiang@a-star.edu.sg</a><div class="profile-links"><a href="https://scholar.google.com/citations?user=-yZ-BXMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0001-6375-8474" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://github.com/YongxiangLei" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/yongxiang-lei" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><button class="copy-email" type="button">Copy email address</button><p class="copy-status" role="status" aria-live="polite"></p></div></div></section>
   </main>
   <footer class="site-footer section-wrap"><a class="wordmark" href="#home">Yongxiang Lei<span>雷勇祥</span></a><p>Personal academic website · Singapore</p><a href="#home">Back to top</a></footer>
 </body>
 </html>
+
